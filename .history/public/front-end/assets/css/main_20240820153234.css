@@ -1,0 +1,363 @@
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.header_top{
+    position: relative;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.header_top-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+}
+
+.header_top-item{
+    font-size: 14px;
+    color: #fff;
+}
+
+.header_main{
+    position: relative;
+    background: #fff;
+}
+
+.header_elementor{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 16px 0 54px 0;
+}
+
+.logo{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.logo-img{
+    width: 90px;
+    height: 90px;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text h4{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--primary-color-2);
+}
+
+.logo-text h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #C60C30;
+    font-weight: 900;
+}
+
+
+
+.header_item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_item-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_item-context p{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.header_search{
+    height: 46px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    background: #F6FDFF;
+    min-width: 270px;
+}
+
+.header_search input{
+    width: calc(100% - 46px);
+    background: transparent;
+    border: none;
+    height: 100%;
+    padding: 0 10px 0 14px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.header_search button{
+    width: 46px;
+    height: 46px;
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.header_fixed{
+    transform: translateY(-40px);
+}
+
+.header_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 60px;
+}
+.header_nav::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    transform: skewX(-15deg);
+    background: var(--primary-color);
+    z-index: 0;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 70px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.nav-link i{
+    font-size: 14px;
+}
+
+.header_btn{
+    position: relative;
+    z-index: 1;
+}
+
+.register_button{
+    height: 46px;
+    position: relative;
+    color: var(--primary-color);
+    padding: 0 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+    position: relative;
+}
+
+.register_button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform: skewX(-12deg);
+    background: #fff;
+    z-index: -1;
+}
+
+
+/* banner */
+
+.banner{
+    margin-top: 196px;
+}
+
+
+/* main */
+
+/* Dropdown */
+.dropdown{
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-select{
+    padding: 12px 18px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.dropdown-icon{
+    padding: 0 6px;
+    transform: translate(4px,0px);
+    transition: .3s;
+}
+
+.dropdown-icon:hover{
+    opacity: 0.7;
+}
+
+.dropdown-icon.active{
+    transform: translate(4px,-2px) rotate(180deg);
+}
+
+.dropdown-list{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 0 60px rgba(6,30,98,.08);
+    width: 100%;
+    padding: 10px 20px 10px 30px;
+    max-height: 250px;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 9;
+}
+
+.dropdown-list.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-head{
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--title-color);
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    gap: 4px;
+    position: relative;
+    left: -20px;
+}
+
+.dropdown-head i{
+    font-size: 4px;
+}
+
+.dropdown-list-item{
+    padding: 10px 0 10px 0;
+    font-size: 14px;
+    transition: .3s;
+    cursor: pointer;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.dropdown-list-item:hover,.dropdown-list-item.active{
+    color: var(--primary-color);
+}
+
+.dropdown-content .dropdown-list-item:last-child{
+    border-bottom: none;
+}
+
+
+.box_search{
+    background: var(--primary-color);
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+
+.search_elementor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search_context{
+    width: 350px;
+    color: #fff;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+}
+.search_context::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 2px;
+    height: 110%;
+    transform: translateY(-50%);
+    background-color: #fff;
+}
+
+.search_inner{
+    width: calc(100% - 590px);
+}
+
+.search_img{
+    width: 180px;
+    background: #C60C30;
+}
+
+.search_lits{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 14px;
+}
+
+.select-name{
+    margin-left: 4px;
+}
+
+.btn_view-more{
+    height: 48px;
+    width: 160px;
+    border-radius: 30px;
+    border: none;
+    background: #C60C30;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}

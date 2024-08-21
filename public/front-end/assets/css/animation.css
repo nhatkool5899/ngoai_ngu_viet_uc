@@ -1,0 +1,153 @@
+.hidden {
+    opacity: 0;
+  }
+
+  .fade-in {
+    animation: fadeIn 1s forwards;
+  }
+
+  .slide-in-top {
+    animation: slideInTop 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .content {
+    margin-top: 100vh;
+  }
+
+
+/*====== Reveal ======*/
+.reavel{
+    position: relative;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: .8s;
+    visibility: hidden;
+}
+.reavel.active{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.services__service .reavel:nth-child(3n-2){
+    transition: all ease 0.5s;
+}
+.services__service .reavel:nth-child(3n-1){
+    transition: all ease 1s;
+}
+.services__service .reavel:nth-child(3n+0){
+    transition: all ease 1.5s;
+}
+
+
+.data__content .reavel:nth-child(1){
+    transition: all ease 0.5s;
+}
+.data__content .reavel:nth-child(2){
+    transition: all ease 1s;
+}
+.data__content .reavel:nth-child(3){
+    transition: all ease 1.5s;
+}
+.data__content .reavel:nth-child(4){
+    transition: all ease 2s;
+}
+
+.reavel-2{
+    position: relative;
+    transform: translateX(-50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease-in-out;
+}
+.reavel-2.active{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.reavel-3{
+    position: relative;
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease-in-out;
+    transition-delay: .2s;
+}
+.reavel-3.active{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.reavel-4{
+    position: relative;
+    transform: translateX(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease-in-out;
+}
+.reavel-4.active{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.partners__data .reavel-2:nth-child(6n-5){
+    transition: all ease 0.3s;
+}
+.partners__data .reavel-2:nth-child(6n-4){
+    transition: all ease 0.6s;
+}
+.partners__data .reavel-2:nth-child(6n-3){
+    transition: all ease 0.9s;
+}
+.partners__data .reavel-2:nth-child(6n-2){
+    transition: all ease 1.2s;
+}
+.partners__data .reavel-2:nth-child(6n-1){
+    transition: all ease 1.5s;
+}
+.partners__data .reavel-2:nth-child(6n+0){
+    transition: all ease 1.8s;
+}
+/* 
+.reavel-3{
+    position: relative;
+    transform: translate(-20px,50px);
+    opacity: 0;
+}
+.reavel-3.active{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.gallery__list .reavel-3:nth-child(3n-2){
+    transition: all ease 0.6s;
+}
+.gallery__list .reavel-3:nth-child(3n-1){
+    transition: all ease 1.2s;
+}
+.gallery__list .reavel-3:nth-child(3n){
+    transition: all ease 1.8s;
+} */

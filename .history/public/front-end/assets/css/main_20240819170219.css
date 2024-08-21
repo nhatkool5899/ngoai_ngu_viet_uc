@@ -1,0 +1,50 @@
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.header_top{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-color-2);
+}
+
+.header_top-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_main{
+    position: relative;
+}
+
+.header_elementor{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.logo{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+
+.header_item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_item-icon{
+    
+}
